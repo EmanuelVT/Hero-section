@@ -14,7 +14,7 @@ body {
 
 .container {
     padding: 0 3rem;
-    min-width: 500px;
+    min-width: 350px;
 }
 
 .top-bar {
@@ -207,6 +207,29 @@ body {
 .icon::after {
     top: 1rem;
     left: 0;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        min-width: none;
+        width: 100%;
+    }
+
+    .hero-headline h1 {
+        font-size: 150%;
+        width: 90%;
+    }
+
+    .hero-text {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 1119px) {
