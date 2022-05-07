@@ -260,6 +260,8 @@ body {
     .container {
         min-width: none;
         width: 100%;
+        padding: 0 0;
+        overflow: hidden;
     }
 
     .top-bar {
