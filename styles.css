@@ -209,28 +209,7 @@ body {
     left: 0;
 }
 
-@media (max-width: 600px) {
 
-    .container {
-        min-width: none;
-        width: 100%;
-    }
-
-    .hero-headline h1 {
-        font-size: 150%;
-        width: 90%;
-    }
-
-    .hero-text {
-        width: 90%;
-        margin-bottom: 1rem;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 @media (max-width: 1119px) {
     .hero-image-container {
@@ -245,6 +224,8 @@ body {
     .hero-headline {
         width: 100%;
     }
+
+
 
 }
 
@@ -272,4 +253,49 @@ body {
     }
 
 
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        min-width: none;
+        width: 100%;
+    }
+
+    .top-bar {
+        padding: 2rem 2rem;
+        font-size: 2.5rem;
+    }
+
+    .hero-headline h1 {
+        font-size: 150%;
+        width: 90%;
+    }
+
+    .hero-text {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons a {
+        margin-bottom: 1rem;
+    }
+
+    .square {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .square-image {
+        width: 3rem;
+    }
+
+    .square-apple {
+        width: 2rem;
+    }
 }
