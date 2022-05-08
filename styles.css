@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Radio Canada', sans-serif;
+    position: relative;
 }
 
 .container {
@@ -106,6 +107,47 @@ body {
     align-items: center;
     margin: 1rem;
 }
+
+
+.mobile-menu {
+    background-color: #FFF;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: none;
+    right: 200rem;
+    transition: all .2s ease-in-out;
+
+}
+
+
+.mobile-link {
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+}
+
+.mobile-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-div {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
 
 
 
@@ -240,8 +282,16 @@ body {
     }
 
     .icon-div {
-        display: inherit;
+        display: block;
         cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-burger {
+        display: none;
     }
 }
 
@@ -262,6 +312,7 @@ body {
         padding: 0 0;
         overflow-x: hidden;
     }
+
 
     .top-bar {
         padding: 2rem 2rem;
